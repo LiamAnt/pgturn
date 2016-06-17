@@ -1,0 +1,110 @@
+﻿/* 建議使用 520px 和 920px 為分界點
+(參考自 Adobe RWD HTML5 概念網站：http://adobe-html5.jp/) */
+
+body {
+	font-family: Arial, "文泉驛正黑", "WenQuanYi Zen Hei", "儷黑 Pro", "LiHei Pro", "微軟正黑體", "Microsoft JhengHei", "標楷體", DFKai-SB, sans-serif;
+}
+
+
+
+
+
+/******************** pgturn plugin s *********************/
+html, body {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background-color: #69A22C
+}
+
+.pgt_container {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+
+.pgt_page {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+}
+
+.pgt_indicator {
+	position: fixed;
+	bottom: 5%;
+	width: 100%;
+	text-align: center;
+}
+.pgt_indicator a {
+	display: inline-block;
+	width: 0.5em;
+	height: 0.5em;
+	margin: 0 0.7em;
+	background-image: url("../images/dot.png");
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.pgt_pgbox {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.pgt_nextpg, .pgt_prevpg {
+	width: 50px;
+	height: 50px;
+	border-right: 2px solid #fff;
+	border-top: 2px solid #fff;
+	position: fixed;
+	top: 50%;
+	margin-top: -25px;
+	transition:.2s;
+}
+
+.pgt_nextpg {
+	right: 50px;
+	transform: rotate(45deg);
+}
+
+.pgt_prevpg {
+	left: 50px;
+	transform: rotate(-135deg);
+}
+
+.pgt_nextpg:hover {
+	right: 57px;
+	transition:.2s;
+}
+
+.pgt_prevpg:hover {
+	left: 57px;
+	transition:.2s;
+}
+
+.pgt_pgbox > a {
+	cursor: default;
+}
+/******************** pgturn plugin e *********************/
+
+
+
+
+
+/******************** 測試用，可以刪掉 s *********************/
+.pgt_page h5 {
+	font-size: 100px;
+	color: #fff;
+	text-align: center;
+	margin: 250px 0 50px 0;
+}
+.pgt_pginner p {
+	text-align: center;
+}
+/******************** 測試用，可以刪掉 e *********************/
